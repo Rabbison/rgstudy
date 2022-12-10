@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
+  background-color:;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
+body {
+    position: webkit-fill-avalable;
+  font-family: 'Roboto', sans-serif;
+  user-select: none;
+}
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  left: -81%;
+  width: 80%;
+  height: 100%;
+  background: white;
+  transition: all .3 ease;
+  flex-direction:colum;
+  overflow: auto;
+  border: 3px solid grey;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: grey;
+  user-select: none;
+}
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .1s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.sidebar  a {
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 1px;
+  top: 1px;
+  font-size: 35px;
+  color: black;
+  padding: 6px 12px;
+  transition: all .2s;
+  color: grey;
+}
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  opacity: .4;
+  padding: 4px 9px;
+  transition: all .3s ease;
+  position: fixed;
+  color:red;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+#check:checked ~ section{
+  margin-left: 250px;
+}
+section{
+  background: url(bg.jpeg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+}
+.sidea{
+    position: scroll;
+    display: block;
+    padding-left:20px;
+    border-bottom: 1px solid 55,55,55,4 black;
+    background-color:grey;
+    border-radius: 2px;
+    border:red;
+    width:webkit-fill-avalable;
+    height: 5%;
+    color:pink;
+}
+.sidea:hover{
+    background: red;
+}
+.devmenu{
+    color: grey;
+    position: absolute;
+padding-left: 20px;
+padding-right: 20px;
+margin-right: 20px;
+
+}
+.logo{
+    border-radius:3px;
+    padding-top:250px;
+    bottom:100px;
+    font-size: 15px;
+    text-align: center;
+    font-size: 10px;
+    color:green;
+    -webkit-border-bottom-left-radius: 20px;
+    
+}
+.div{
+    position:fixed;
+    width: 100%;
+    height: fixed;
+    background: white;
+}
+.h5d{
+    color: green;
+    padding-left: 20px;
+    text-align: center;
+}
+.www{
+    margin: auto;
+    position: auto;
+    align-items: center;
+    text-align: center;
+    width:240px;
+    height: 240px;
+    background-color:grey;
+    border-radius:2%;
+    user-select: none;
+    border:3px solid  grey;
+}
+.www img{
+    width: 240px;
+    height: 240px;
+    user-select: none;
+}
+
+.ww{
+    font-size: 15px;
+    color:green;
+    text-align: center;
+    align-items: center;
+    
+}
+.edev{
+    border: black;
+    margin: 2px;
+    display:inline-block;
+    float: none;
+    width: 40%;
+    height: 20%;
+    border-radius: 8px;
+    background: green;
+    
+}
+.back{
+    margin: auto;
+    text-align: center;
+    color:red;
+    stroke-width: 100px;
+    background: green;
+    width: 37px;
+    height: 20px;
+    border-radius: 5px;
+}
+.weh{
+    text-align: center;
+}
+.divbooks{
+    background:grey;
+    margin: auto;
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    text-align-last: center;
+    border:1.3px solid black;
+}
+.h4h{
+
+    text-align-last: center;
+}
+.divbooks img{
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+    text-align-last: center;
+    
+}
+.backd{
+    background: grey;
+    position: fixed;
+    text-align: center;
+    margin: auto;
+    width: 100px;
+    height: 20px;
+    border-radius: 15px;
+    color: red;
+    
+}
+.fullpdf{
+    width: 100%;
+    height: 850px;
+    opacity: .20px;
+    
+    
+}
+.bodyy{
+    background-color: white;
+}
+fa fa times{
+    color:red;
+}
